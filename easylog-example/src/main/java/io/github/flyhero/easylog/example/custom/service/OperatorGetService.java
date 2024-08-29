@@ -1,11 +1,11 @@
 package io.github.flyhero.easylog.example.custom.service;
 
 import io.github.flyhero.easylog.service.IOperatorService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author WangQingFei(qfwang666@163.com)

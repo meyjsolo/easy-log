@@ -13,9 +13,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>easylog-example</name>
     <description>easylog-example</description>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,9 +30,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.github.flyhero</groupId>
-            <artifactId>easylog-spring-boot-starter</artifactId>
-            <version>2.1.2</version>
+            <groupId>cn.yxs</groupId>
+            <artifactId>yxs-easylog-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

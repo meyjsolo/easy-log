@@ -1,6 +1,5 @@
 package io.github.flyhero.easylog.configuration;
 
-import io.github.flyhero.easylog.aop.EasyLogAspect;
 import io.github.flyhero.easylog.function.CustomFunctionFactory;
 import io.github.flyhero.easylog.function.EasyLogParser;
 import io.github.flyhero.easylog.function.ICustomFunction;
@@ -12,6 +11,7 @@ import io.github.flyhero.easylog.service.IOperatorService;
 import io.github.flyhero.easylog.service.impl.DefaultLogRecordServiceImpl;
 import io.github.flyhero.easylog.service.impl.DefaultOperatorServiceImpl;
 import io.github.flyhero.easylog.util.EasyLogVersion;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -22,7 +22,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Role;
 
-import javax.annotation.PostConstruct;
+
 import java.util.List;
 
 @Configuration
@@ -36,7 +36,7 @@ public class EasyLogAutoConfiguration {
 
     @PostConstruct
     public void printBanner() {
-        if (!easyLogProperties.isBanner()){
+        if (!easyLogProperties.isBanner()) {
             return;
         }
         System.out.println("                        _             \n" +
@@ -85,4 +85,5 @@ public class EasyLogAutoConfiguration {
     public ILogRecordService recordService() {
         return new DefaultLogRecordServiceImpl();
     }
+
 }

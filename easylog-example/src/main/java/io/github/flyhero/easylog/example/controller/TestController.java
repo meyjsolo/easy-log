@@ -9,8 +9,6 @@ import io.github.flyhero.easylog.example.service.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-
 /**
  * @author WangQingFei(qfwang666 @ 163.com)
  * @date 2022/2/26 11:40
