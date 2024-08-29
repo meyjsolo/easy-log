@@ -44,6 +44,27 @@ easy-log是基于SpringBoot的一款通用操作日志组件，它指在帮助�
 ![](./docs/images/aop-design.png)
 
 ## 5. 使用方法
+
+---
+
+### 5.0 SpingBoot 3.x
+
+需自行 `install` stater 模块到本地仓库
+
+在 pom.xml 中引入
+
+```xml
+<dependency>
+    <groupId>cn.yxs</groupId>
+    <artifactId>yxs-easylog-spring-boot-starter</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+
+其他使用方式与原来相同。
+
+---
+
 ### 5.1 引入依赖
 
 已上传到中央仓库：https://search.maven.org/search?q=g:io.github.flyhero
